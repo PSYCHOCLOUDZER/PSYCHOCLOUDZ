@@ -1,0 +1,46 @@
+
+# Introduction to the game
+print("Welcome to the Spiritual Game. Choose your path wisely: God or the Devil.")
+print("Try to navigate through the contradicting challenges and mysteries.")
+
+# Game loop
+while True:
+    choice = input("Do you choose God or the Devil? (Type 'God' or 'Devil'): ").lower()
+
+    if choice == "god":
+        print("You have chosen the path of God. Love and peace surround you.")
+        print("You already have everything you need and face challenges with love and compassion.")
+        # Add gameplay mechanics for the path of God
+        print("Benefits of choosing God: Inner peace, love, and fulfillment. Overcoming challenges with compassion.")
+        print("Consequences of choosing God: Challenges may test your faith and beliefs.")
+
+    elif choice == "devil":
+        print("You have chosen the path of the Devil. Corruption and temptations await you.")
+        decision = input("What do you desire most: money, drugs, or power? ").lower()
+
+        if decision == "money":
+            print("Money flows abundantly, but at what cost?")
+            # Add consequences and challenges related to money
+            print("Benefits of choosing the Devil: Wealth, luxury, and power. Succumbing to temptations.")
+            print("Consequences of choosing the Devil: Moral dilemmas, inner turmoil, and potential destruction.")
+
+        elif decision == "drugs":
+            print("Indulge in a world of illusions and addiction.")
+            # Add challenges and temptations related to drugs
+            print("Benefits of choosing the Devil: Hedonistic pleasures and escape from reality.")
+            print("Consequences of choosing the Devil: Dependency, loss of control, and negative effects on well-being.")
+
+        elif decision == "power":
+            print("Rule with an iron fist, but beware of betrayals.")
+            # Add challenges and struggles for power
+            print("Benefits of choosing the Devil: Dominance, control, and influence over others.")
+            print("Consequences of choosing the Devil: Isolation, distrust, and potential downfall.")
+
+    else:
+        print("Invalid choice. Please choose God or the Devil.")
+
+    play_again = input("Would you like to play again?(Type 'yes' or 'no'): ").lower()
+    if play_again != "yes":
+        break
+
+print("Thank you for playing the Spiritual Game. See you next time!")
